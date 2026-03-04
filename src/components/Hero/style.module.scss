@@ -1,0 +1,262 @@
+@use '../../styles/variables' as *;
+
+.hero {
+  background: $primary-blue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  position: relative;
+  overflow: hidden;
+
+  // Background decorative elements
+  &::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(193, 18, 31, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+}
+
+.inner {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+// Left Column
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  border-radius: $radius-full;
+  padding: 8px 20px;
+
+  span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #C9A84C;
+    letter-spacing: 0.5px;
+  }
+}
+
+.headline {
+  font-family: $font-primary;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: $white;
+  line-height: 1.15;
+}
+
+.highlight {
+  color: $secondary-red;
+  font-style: italic;
+}
+
+.subheadline {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  font-size: 1.05rem;
+  padding: 18px 40px;
+}
+
+.btnOutline {
+  font-size: 1.05rem;
+  padding: 16px 32px;
+}
+
+.microcopy {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  span {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 500;
+  }
+}
+
+// Right Column – Image
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  animation: scaleIn 0.9s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -12px;
+    border-radius: $radius-xl;
+    border: 2px solid rgba(193, 18, 31, 0.25);
+    z-index: 0;
+  }
+}
+
+.heroImage {
+  width: 100%;
+  height: 80vh;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: $radius-xl;
+  position: relative;
+  z-index: 1;
+  box-shadow: $shadow-medium;
+}
+
+.floatingBadge {
+  position: absolute;
+  bottom: 24px;
+  left: -24px;
+  background: $white;
+  border-radius: $radius-md;
+  padding: 16px 20px;
+  box-shadow: $shadow-medium;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.badgeNumber {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $primary-blue;
+  line-height: 1;
+}
+
+.badgeLabel {
+  font-size: 0.75rem;
+  color: #6B6B7B;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 4px;
+}
+
+// Wave
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 0;
+
+  svg {
+    width: 100%;
+    height: 80px;
+  }
+}
+
+// Responsive
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .badge {
+    align-self: center;
+  }
+
+  .subheadline {
+    max-width: 100%;
+  }
+
+  .microcopy {
+    justify-content: center;
+  }
+
+  .heroImage {
+    height: 360px;
+    max-height: 360px;
+  }
+
+  .floatingBadge {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  .actions {
+    flex-direction: column;
+    width: 100%;
+
+    a {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.93); }
+  to { opacity: 1; transform: scale(1); }
+}

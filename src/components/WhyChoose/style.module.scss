@@ -1,0 +1,93 @@
+@use '../../styles/variables' as *;
+
+.whyChoose {
+  background: $white;
+  padding: $section-padding;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $secondary-red;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #5A5A6A;
+  line-height: 1.75;
+}
+
+.reasonsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reasonItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: $light-beige;
+  border-radius: $radius-md;
+  padding: 20px 24px;
+  transition: $transition-default;
+
+  &:hover {
+    box-shadow: $shadow-soft;
+    transform: translateX(6px);
+  }
+}
+
+.reasonIcon {
+  font-size: 1.6rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.reasonTitle {
+  display: block;
+  font-family: $font-primary;
+  font-size: 1rem;
+  font-weight: 700;
+  color: $primary-blue;
+  margin-bottom: 4px;
+}
+
+.reasonDesc {
+  display: block;
+  font-size: 0.88rem;
+  color: #6B6B7B;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .textCol {
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,107 @@
+@use '../../styles/variables' as *;
+
+.testimonials {
+  background: $white;
+  padding: $section-padding;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $secondary-red;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: $light-beige;
+  border-radius: $radius-lg;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: $transition-default;
+
+  &:hover {
+    box-shadow: $shadow-soft;
+    transform: translateY(-4px);
+  }
+
+  :global(.stars) {
+    font-size: 1rem;
+  }
+}
+
+.text {
+  font-size: 0.93rem;
+  color: #4A4A5A;
+  line-height: 1.75;
+  font-style: italic;
+  flex: 1;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: $primary-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: $white;
+  flex-shrink: 0;
+  font-family: $font-primary;
+}
+
+.name {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: $primary-blue;
+}
+
+.role {
+  display: block;
+  font-size: 0.78rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+// Responsive
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}

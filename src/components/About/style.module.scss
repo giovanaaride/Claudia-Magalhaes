@@ -1,0 +1,159 @@
+@use '../../styles/variables' as *;
+
+.about {
+  background: $white;
+  padding: $section-padding;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+// Image Column
+.imageCol {
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.founderImage {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 6px solid $light-beige;
+  box-shadow: $shadow-medium;
+
+  @media (max-width: 576px) {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+.experienceBadge {
+  position: absolute;
+  bottom: 20px;
+  right: -10px;
+  background: $secondary-red;
+  color: $white;
+  border-radius: $radius-md;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(193, 18, 31, 0.4);
+}
+
+.years {
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.yearsLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+// Content Column
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $secondary-red;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.text {
+  font-size: 1rem;
+  color: #5A5A6A;
+  line-height: 1.75;
+
+  strong {
+    color: $primary-blue;
+    font-weight: 700;
+  }
+}
+
+.eyebrowSmall {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $secondary-red;
+  margin-bottom: 4px;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: $light-beige;
+  border-radius: $radius-md;
+  padding: 20px 24px;
+  margin: 4px 0;
+}
+
+.experienceItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: $text-dark;
+  line-height: 1.4;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background: $white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  box-shadow: $shadow-soft;
+}
+
+// Responsive
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .differentialItem {
+    justify-content: center;
+  }
+
+  .content {
+    align-items: center;
+  }
+}

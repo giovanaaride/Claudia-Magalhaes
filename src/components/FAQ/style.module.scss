@@ -1,0 +1,118 @@
+@use '../../styles/variables' as *;
+
+.faq {
+  background: $light-beige;
+  padding: $section-padding;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 100px;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $secondary-red;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #6B6B7B;
+  line-height: 1.7;
+}
+
+// FAQ List
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faqItem {
+  background: $white;
+  border-radius: $radius-md;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: $transition-default;
+
+  &.open {
+    box-shadow: $shadow-soft;
+  }
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  text-align: left;
+  font-family: $font-secondary;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: $primary-blue;
+  cursor: pointer;
+  transition: $transition-default;
+  background: transparent;
+  border: none;
+  gap: 16px;
+
+  &:hover {
+    background: rgba($light-beige, 0.5);
+  }
+}
+
+.faqIcon {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: $secondary-red;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+
+  .faqItem.open & {
+    max-height: 300px;
+  }
+
+  p {
+    padding: 0 24px 20px;
+    font-size: 0.92rem;
+    color: #5A5A6A;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .textCol {
+    position: static;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,154 @@
+@use '../../styles/variables' as *;
+
+.products {
+  background: $light-beige;
+  padding: $section-padding;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $secondary-red;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: $white;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-soft;
+  transition: $transition-default;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-medium;
+
+    .orderBtn {
+      background: $secondary-red;
+      color: $white;
+    }
+
+    .productImage {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: $primary-blue;
+  color: $white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: $radius-full;
+  z-index: 1;
+  letter-spacing: 0.3px;
+}
+
+.cardBody {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.productName {
+  font-family: $font-primary;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: $primary-blue;
+}
+
+.productDesc {
+  font-size: 0.87rem;
+  color: #6B6B7B;
+  line-height: 1.55;
+  flex: 1;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1rem;
+  color: $primary-blue;
+  font-family: $font-primary;
+}
+
+.orderBtn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: $radius-full;
+  border: 2px solid $secondary-red;
+  color: $secondary-red;
+  transition: $transition-default;
+  white-space: nowrap;
+  background: transparent;
+
+  &:hover {
+    background: $secondary-red;
+    color: $white;
+  }
+}
+
+// Responsive
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

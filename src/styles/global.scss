@@ -1,0 +1,171 @@
+@use './variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+// ============================================
+//   Reset & Base
+// ============================================
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-secondary;
+  color: $text-dark;
+  background-color: $white;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+// ============================================
+//   Utility Classes
+// ============================================
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: $container-padding;
+}
+
+.section-title {
+  font-family: $font-primary;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 700;
+  color: $text-dark;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: $text-muted;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: $secondary-red;
+  color: $white;
+  font-family: $font-secondary;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 16px 36px;
+  border-radius: $radius-full;
+  border: 2px solid $secondary-red;
+  transition: $transition-default;
+  letter-spacing: 0.3px;
+
+  &:hover {
+    background: #A30E19;
+    border-color: #A30E19;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(193, 18, 31, 0.35);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: $white;
+  font-family: $font-secondary;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 34px;
+  border-radius: $radius-full;
+  border: 2px solid rgba(255,255,255,0.6);
+  transition: $transition-default;
+  letter-spacing: 0.3px;
+
+  &:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: $white;
+  }
+}
+
+// ============================================
+//   Stars
+// ============================================
+
+.stars {
+  display: flex;
+  gap: 4px;
+  color: $gold;
+  font-size: 1.1rem;
+}
+
+// ============================================
+//   Animations
+// ============================================
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease forwards;
+}
