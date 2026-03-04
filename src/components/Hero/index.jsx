@@ -64,7 +64,7 @@ export default function Hero() {
         <div className={styles.imageWrapper}>
           <div className={styles.imageFrame}>
             <img
-              src="/images/hero-dessert.jpg"
+              src="/images/testimonials/claudia6.png"
               alt="Cláudia Magalhães cozinheira profissional no Rio de Janeiro — produção de refeições para eventos"
               className={styles.heroImage}
             />
