@@ -13,13 +13,23 @@ export default function Hero() {
   return (
     <section className={styles.hero} id="inicio" aria-label="Cozinheira profissional no Rio de Janeiro">
       <div className={`container ${styles.inner}`}>
-        {/* Left Content */}
-        <div className={styles.content}>
-          <div className={styles.badge}>
-            <HiSparkles />
-            <span>Gastronomia profissional com 15+ anos</span>
+        {/* Left Image (Moved from right) */}
+        <div className={styles.imageWrapper}>
+          <div className={styles.imageFrame}>
+            <img
+              src="/images/testimonials/claudia6.png"
+              alt="Cláudia Magalhães cozinheira profissional no Rio de Janeiro — produção de refeições para eventos"
+              className={styles.heroImage}
+            />
+            <div className={styles.floatingBadge}>
+              <span className={styles.badgeNumber}>2.000+</span>
+              <span className={styles.badgeLabel}>clientes atendidos</span>
+            </div>
           </div>
+        </div>
 
+        {/* Right Content */}
+        <div className={styles.content}>
           <h1 className={styles.headline}>
             Cozinha profissional feita com
             <span className={styles.highlight}> técnica, cuidado e sabor</span>
@@ -58,21 +68,6 @@ export default function Hero() {
             <span><GiCook /> Gastronomia profissional</span>
             <span><HiSparkles /> Segurança alimentar</span>
           </p>
-        </div>
-
-        {/* Right Image */}
-        <div className={styles.imageWrapper}>
-          <div className={styles.imageFrame}>
-            <img
-              src="/images/testimonials/claudia6.png"
-              alt="Cláudia Magalhães cozinheira profissional no Rio de Janeiro — produção de refeições para eventos"
-              className={styles.heroImage}
-            />
-            <div className={styles.floatingBadge}>
-              <span className={styles.badgeNumber}>2.000+</span>
-              <span className={styles.badgeLabel}>clientes atendidos</span>
-            </div>
-          </div>
         </div>
       </div>
 

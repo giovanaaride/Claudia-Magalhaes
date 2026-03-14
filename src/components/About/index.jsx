@@ -78,7 +78,7 @@ export default function About() {
             rel="noopener noreferrer"
             id="about-cta"
           >
-            Falar com a Cláudia
+            Falar com Cláudia
           </a>
         </div>
       </div>

@@ -7,13 +7,9 @@ export default function CTA() {
     <section className={styles.cta} id="orcamento" aria-label="Solicitar orçamento — cozinheira profissional Rio de Janeiro">
       <div className={styles.overlay} />
       <div className={`container ${styles.inner}`}>
-        <div className={styles.urgencyBadge}>
-          <MdOutlineAccessTime />
-          Vagas limitadas por semana — Garanta a sua!
-        </div>
+
         <h2 className={styles.headline}>
-          Faça seu pedido hoje e surpreenda{' '}
-          <span className={styles.highlight}>alguém especial</span>
+          Faça seu pedido hoje e <span className={styles.highlight}>surpreenda-se</span>
         </h2>
         <p className={styles.subtext}>
           Atendo no Rio de Janeiro com planejamento completo, segurança alimentar e gastronomia de alto nível. 

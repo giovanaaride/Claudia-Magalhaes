@@ -9,10 +9,12 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import SchemaOrg from './components/SEO/SchemaOrg';
 
 function App() {
   return (
     <>
+      <SchemaOrg />
       <Header />
       <main>
         <Hero />

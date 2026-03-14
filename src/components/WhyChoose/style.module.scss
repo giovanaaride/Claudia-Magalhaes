@@ -1,7 +1,7 @@
 @use '../../styles/variables' as *;
 
 .whyChoose {
-  background: $white;
+  background: $light-beige;
   padding: $section-padding;
 }
 
@@ -46,7 +46,7 @@
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  background: $light-beige;
+  background: $white;
   border-radius: $radius-md;
   padding: 20px 24px;
   transition: $transition-default;
