@@ -1,5 +1,6 @@
 import { MdRestaurantMenu, MdMenuBook, MdBusiness, MdInventory2, MdVerified } from 'react-icons/md';
 import styles from './style.module.scss';
+import { BiHappy } from 'react-icons/bi';
 
 const experienceItems = [
   { icon: <MdRestaurantMenu />, text: 'Planejamento e execução de produções quentes e frias' },
@@ -11,7 +12,7 @@ const experienceItems = [
 
 export default function About() {
   return (
-    <section className={styles.about} id="sobre" aria-label="Sobre a Cláudia Magalhães — cozinheira profissional Rio de Janeiro">
+    <section className={styles.about} id="sobre" aria-label="Sobre a Cláudia Magalhães, cozinheira profissional no Rio de Janeiro">
       <div className={`container ${styles.inner}`}>
 
         {/* Left – Founder Image */}
@@ -38,8 +39,8 @@ export default function About() {
           </h2>
 
           <p className={styles.text}>
-            A cozinha sempre foi mais do que um trabalho para mim — é um espaço de cuidado,
-            organização e dedicação.
+            A culinária profissional sempre representou mais do que apenas um ofício, sendo um verdadeiro espaço de cuidado,
+            organização e dedicação contínua.
           </p>
 
           <p className={styles.text}>
@@ -67,8 +68,8 @@ export default function About() {
           </ul>
 
           <p className={styles.text}>
-            Hoje, levo toda essa vivência para cada preparo, unindo técnica, responsabilidade
-            e sabor — garantindo profissionalismo e cuidado em cada detalhe.
+            Atualmente, aplico toda essa vivência gastronômica em cada preparo, unindo técnica, responsabilidade
+            e sabor para garantir profissionalismo e alto padrão em cada detalhe.
           </p>
 
           <a
@@ -85,3 +86,6 @@ export default function About() {
     </section>
   );
 }
+
+
+
