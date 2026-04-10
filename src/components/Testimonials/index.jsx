@@ -27,7 +27,7 @@ const testimonials = [
 
 function StarRating({ count }) {
   return (
-    <div className={styles.stars} aria-label={`${count} estrelas`}>
+    <div className={styles.stars} role="img" aria-label={`${count} estrelas`}>
       {Array.from({ length: count }).map((_, i) => (
         <FaStar key={i} />
       ))}

@@ -9,7 +9,7 @@ const miniReviews = [
 
 function StarRating({ count = 5 }) {
   return (
-    <div className={styles.stars} aria-label={`Avaliação ${count} de 5 estrelas`}>
+    <div className={styles.stars} role="img" aria-label={`Avaliação ${count} de 5 estrelas`}>
       {Array.from({ length: count }).map((_, i) => (
         <FaStar key={i} />
       ))}

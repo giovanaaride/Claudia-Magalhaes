@@ -90,6 +90,7 @@ export default function Products() {
                     target="_blank"
                     rel="noopener noreferrer"
                     id={`order-${product.id}`}
+                    aria-label={`Pedir ${product.name}`}
                   >
                     Adicionar ao Pedido
                   </a>

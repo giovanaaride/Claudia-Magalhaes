@@ -20,6 +20,8 @@ export default function Hero() {
               src="/images/testimonials/claudia6.png"
               alt="Cláudia Magalhães cozinheira profissional no Rio de Janeiro. Produção de refeições para eventos"
               className={styles.heroImage}
+              fetchPriority="high"
+              decoding="async"
             />
             <div className={styles.floatingBadge} data-aos="zoom-in" data-aos-delay="400">
               <span className={styles.badgeNumber}>2.000+</span>
@@ -31,12 +33,11 @@ export default function Hero() {
         {/* Right Content */}
         <div className={styles.content} data-aos="fade-left">
           <h1 className={styles.headline}>
-            O melhor da <span className={styles.highlight}>gastronomia artesanal</span> para o seu evento
+            <span className={styles.highlight}>Gastronomia artesanal personalizada:</span> encomende para entrega ou receba a chef na sua cozinha.
           </h1>
 
           <p className={styles.subheadline}>
-            São mais de 15 anos de experiência preparando buffets e encomendas com qualidade e 
-            segurança alimentar. Tudo feito com o cuidado que a sua mesa merece aqui no Rio de Janeiro.
+            Trabalho com comida por encomenda. Eu posso entregar o prato pronto na sua casa ou ir até você e preparar tudo fresquinho com os ingredientes que eu mesma compro.
           </p>
 
           <div className={styles.actions}>
