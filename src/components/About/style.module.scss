@@ -8,8 +8,14 @@
 .inner {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 80px;
   align-items: center;
+  gap: 80px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
 }
 
 // Image Column
@@ -74,6 +80,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 900px) {
+    align-items: center;
+  }
 }
 
 .eyebrow {
@@ -112,7 +122,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background: $white;
+  background: $light-beige;
   border-radius: $radius-md;
   padding: 20px 24px;
   margin: 4px 0;
@@ -139,21 +149,4 @@
   font-size: 0.9rem;
   flex-shrink: 0;
   box-shadow: $shadow-soft;
-}
-
-// Responsive
-@media (max-width: 900px) {
-  .inner {
-    grid-template-columns: 1fr;
-    gap: 48px;
-    text-align: center;
-  }
-
-  .differentialItem {
-    justify-content: center;
-  }
-
-  .content {
-    align-items: center;
-  }
 }

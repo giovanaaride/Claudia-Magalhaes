@@ -8,8 +8,8 @@ const SchemaOrg = () => {
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Cláudia Magalhães — Personal Chef",
-      "description": "Personal chef com mais de 15 anos de experiência no Rio de Janeiro, especializada em produção para eventos, empresas e refeições sob encomenda na Zona Norte.",
+      "name": "Cláudia Magalhães. Cozinheira Profissional",
+      "description": "Culinária artesanal deliciosa para eventos e encomendas no Rio de Janeiro. Buffet por encomenda com mais de 15 anos de tradição e cuidado.",
       "url": window.location.origin,
       "telephone": "+5521999999999",
       "email": "contato@claudiamagalhaes.com.br",
@@ -31,10 +31,10 @@ const SchemaOrg = () => {
       ],
       "knowsAbout": [
         "Gastronomia Profissional",
-        "Produção de refeições em larga escala",
+        "Buffet por encomenda",
         "Segurança Alimentar",
-        "Buffet para eventos",
-        "Personal Chef"
+        "Eventos e Festas",
+        "Cozinheira Profissional"
       ],
       "openingHoursSpecification": [
         {

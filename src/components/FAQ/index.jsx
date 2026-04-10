@@ -7,32 +7,37 @@ const faqs = [
   {
     id: 'faq-1',
     q: 'Onde você atende?',
-    a: 'Atendo no Rio de Janeiro, especialmente na Zona Norte, com possibilidade de atendimento em outras regiões sob consulta.',
+    a: 'Eu atendo em todo o Rio de Janeiro se for para cozinhar no local do evento. Mas, caso prefira que eu prepare e mande a comida já pronta para você, as entregas são apenas para a Zona Norte.',
   },
   {
     id: 'faq-2',
-    q: 'Por que escolher seus serviços?',
-    a: 'Minha experiência de mais de 15 anos em produção de grande volume e organização profissional garante qualidade, segurança alimentar e entrega eficiente em cada pedido.',
+    q: 'Como funciona o serviço?',
+    a: 'Você tem duas opções bem práticas: eu posso ir até a sua casa fazer todo o preparo lá na hora, ou, se preferir, eu mando a comida pronta e fresquinha direto da minha cozinha de Uber.',
   },
   {
     id: 'faq-3',
-    q: 'Você atende eventos corporativos?',
-    a: 'Sim, realizo produções para empresas, confraternizações e eventos institucionais, com capacidade de produzir até 600 refeições por dia.',
+    q: 'Você leva panelas e utensílios?',
+    a: 'Se o preparo for feito na sua casa, eu utilizo a estrutura e os itens que você já possui na cozinha! Na hora de pensar nos pratos e definir o cardápio, a gente leva em conta justamente o que você tem disponível para que eu trabalhe e entregue o melhor resultado.',
   },
   {
     id: 'faq-4',
-    q: 'É possível personalizar o cardápio?',
-    a: 'Sim, os cardápios podem ser adaptados conforme a necessidade e o perfil do evento, respeitando restrições alimentares e preferências dos convidados.',
+    q: 'Você faz almoços, jantares e confraternizações?',
+    a: 'Sim! Faço desde aquele almoço de domingo com a família até pequenas reuniões e confraternizações. Tudo com muito tempero caseiro e feito no capricho.',
   },
   {
     id: 'faq-5',
-    q: 'Como funciona o atendimento?',
-    a: 'O atendimento pode ser realizado na residência do cliente, para preparo no local, ou por meio de produção própria com entrega programada. Cada serviço é organizado de acordo com a necessidade do evento ou encomenda.',
+    q: 'Posso montar o cardápio do meu jeito?',
+    a: 'Com certeza! A gente monta o cardápio juntos conforme o que você e seus convidados tem vontade de comer. E detalhe: se tiver alguma restrição alimentar, é só batermos um papo que a gente adapta.',
   },
   {
     id: 'faq-6',
-    q: 'Como solicitar orçamento?',
-    a: 'Basta entrar em contato pelo formulário abaixo ou pelo WhatsApp informando o tipo de evento, a data e o número de pessoas.',
+    q: 'Quais são as formas de pagamento?',
+    a: 'Atualmente aceito pagamento apenas em dinheiro ou via Pix.',
+  },
+  {
+    id: 'faq-7',
+    q: 'Como funcionam os orçamentos?',
+    a: 'É só me chamar no WhatsApp ali no botão mágico! Me conta o que você está querendo fazer, a data e para quantas pessoas. A gente bate um papo rápido e eu te passo certinho.',
   },
 ];
 
@@ -56,7 +61,9 @@ function FaqItem({ item }) {
         role="region"
         aria-hidden={!open}
       >
-        <p>{item.a}</p>
+        <div>
+          <p>{item.a}</p>
+        </div>
       </div>
     </div>
   );
@@ -64,16 +71,16 @@ function FaqItem({ item }) {
 
 export default function FAQ() {
   return (
-    <section className={styles.faq} id="faq" aria-label="Perguntas frequentes sobre cozinheira profissional no Rio de Janeiro">
+    <section className={styles.faq} id="faq" aria-label="Perguntas frequentes sobre o serviço da Cláudia Magalhães">
       <div className="container">
         <div className={styles.inner}>
-          <div className={styles.textCol}>
+          <div className={styles.textCol} data-aos="fade-right">
             <span className={styles.eyebrow}>Tire suas dúvidas</span>
             <h2 className={`section-title ${styles.title}`}>
-              Perguntas Frequentes
+              Dúvidas Frequentes
             </h2>
             <p className={styles.subtitle}>
-              Não encontrou o que procura? Entre em contato pelo WhatsApp — responderei rapidamente!
+              Se não encontrar o que procura aqui, me chame no WhatsApp e a gente conversa.
             </p>
             <a
               href="https://wa.me/5521999999999"
@@ -87,7 +94,7 @@ export default function FAQ() {
             </a>
           </div>
 
-          <div className={styles.faqList} role="list">
+          <div className={styles.faqList} role="list" data-aos="fade-left">
             {faqs.map((item) => (
               <FaqItem key={item.id} item={item} />
             ))}

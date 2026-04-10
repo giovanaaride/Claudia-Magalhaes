@@ -17,8 +17,7 @@ export default function Footer() {
             </div>
           </div>
           <p className={styles.brandDesc}>
-            Pratos artesanais feitos com ingredientes selecionados e muito amor,
-            para tornar seus momentos ainda mais especiais.
+            Comida artesanal feita com ingredientes selecionados e muito carinho para deixar os seus momentos ainda mais especiais.
           </p>
           <div className={styles.social}>
             <a
@@ -26,7 +25,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
-              aria-label="Instagram da Cláudia Magalhães — cozinheira profissional RJ"
+              aria-label="Instagram da Cláudia Magalhães"
               id="footer-instagram"
             >
               <FaInstagram size={18} />
@@ -37,7 +36,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className={`${styles.socialLink} ${styles.whatsapp}`}
-              aria-label="WhatsApp da Cláudia Magalhães — solicitar orçamento"
+              aria-label="WhatsApp da Cláudia Magalhães"
               id="footer-whatsapp"
             >
               <FaWhatsapp size={18} />
@@ -56,13 +55,12 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:contato@claudiamagalhaes.com.br">
-                contato@claudiamagalhaes.com.br
-              </a>
+              Atendimento personalizado
             </li>
-            <li>Atendimento personalizado</li>
-            <li>Rio de Janeiro – Zona Norte</li>
-            <li className={styles.mt}><strong>Bairros de atendimento:</strong></li>
+            <li>
+              Rio de Janeiro. Zona Norte
+            </li>
+            <li className={styles.mt}><strong>Onde atende:</strong></li>
             <li>Méier, Tijuca e regiões próximas</li>
           </ul>
         </div>
@@ -70,9 +68,9 @@ export default function Footer() {
 
       <div className={styles.bottom}>
         <div className="container">
-          <p>© {currentYear} Cláudia Magalhães — Cozinheira Profissional no Rio de Janeiro. Todos os direitos reservados.</p>
+          <p>© {currentYear} Cláudia Magalhães. Cozinheira Profissional no Rio de Janeiro.</p>
           <div className={styles.made}>
-            <span>Desenvolvido por: <a href="#" target="_blank" rel="noopener noreferrer">Giovana</a></span>
+            <span>Desenvolvido por: <a href="https://giovanaaride.com" target="_blank" rel="noopener noreferrer">Giovana</a></span>
           </div>
         </div>
       </div>

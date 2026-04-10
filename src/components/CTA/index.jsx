@@ -4,16 +4,16 @@ import styles from './style.module.scss';
 
 export default function CTA() {
   return (
-    <section className={styles.cta} id="orcamento" aria-label="Solicitar orçamento — cozinheira profissional Rio de Janeiro">
+    <section className={styles.cta} id="orcamento" aria-label="Solicitar orçamento. Cozinheira profissional Rio de Janeiro">
       <div className={styles.overlay} />
-      <div className={`container ${styles.inner}`}>
+      <div className={`container ${styles.inner}`} data-aos="zoom-in">
 
         <h2 className={styles.headline}>
-          Faça seu pedido hoje e <span className={styles.highlight}>surpreenda-se</span>
+          Vamos planejar as <span className={styles.highlight}>comidas do seu próximo evento?</span>
         </h2>
         <p className={styles.subtext}>
-          Atendo no Rio de Janeiro com planejamento completo, segurança alimentar e gastronomia de alto nível. 
-          É só entrar em contato e combinar os detalhes!
+          Eu atendo em todo o Rio de Janeiro com muita organização e aquele tempero especial que a sua mesa merece. 
+          É só entrar em contato para combinarmos cada detalhe do seu pedido!
         </p>
         <a
           href="https://wa.me/5521999999999?text=Olá%20Cláudia,%20quero%20solicitar%20um%20orçamento!"
@@ -27,7 +27,7 @@ export default function CTA() {
         </a>
         <p className={styles.microcopy}>
           <MdWarningAmber size={14} style={{ verticalAlign: 'middle' }} />
-          {' '}Agenda limitada — resposta rápida via WhatsApp
+          {' '}Agenda disputada. Respondo rápido pelo WhatsApp.
         </p>
       </div>
     </section>

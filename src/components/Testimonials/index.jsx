@@ -57,8 +57,14 @@ export default function Testimonials() {
         </div>
 
         <div className={styles.grid}>
-          {testimonials.map((t) => (
-            <article key={t.id} className={styles.card} id={t.id}>
+          {testimonials.map((t, index) => (
+            <article 
+              key={t.id} 
+              className={styles.card} 
+              id={t.id}
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+            >
               <StarRating count={t.rating} />
               <p className={styles.text}>"{t.text}"</p>
               <div className={styles.author}>

@@ -30,13 +30,13 @@ export default function Header() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`} role="banner">
       <div className={`container ${styles.inner}`}>
         {/* Logo */}
-        <a href="#inicio" className={styles.logo} onClick={(e) => handleNavClick(e, '#inicio')} aria-label="Cláudia Magalhães - Personal Chef">
+        <a href="#inicio" className={styles.logo} onClick={(e) => handleNavClick(e, '#inicio')} aria-label="Cláudia Magalhães - Cozinheira Profissional">
           <div className={styles.logoIcon}>
             <span>CM</span>
           </div>
           <div className={styles.logoText}>
             <span className={styles.logoName}>Cláudia Magalhães</span>
-            <span className={styles.logoTagline}>Personal Chef</span>
+            <span className={styles.logoTagline}>Cozinheira Profissional</span>
           </div>
         </a>
 

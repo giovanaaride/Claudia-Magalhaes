@@ -12,65 +12,71 @@ const services = [
   {
     id: 'service-eventos',
     icon: <MdRestaurantMenu size={28} />,
-    title: 'Produção para Eventos',
+    title: 'Buffet para Eventos',
     description:
-      'Atendimento para aniversários, confraternizações e eventos corporativos, com planejamento completo e execução profissional.',
+      'Preparo tudo para aniversários, festas em família e confraternizações, com planejamento e foco no seu paladar.',
   },
   {
     id: 'service-encomenda',
     icon: <MdOutlineFoodBank size={28} />,
-    title: 'Refeições sob Encomenda',
+    title: 'Comida sob Encomenda',
     description:
-      'Produção personalizada conforme a necessidade do cliente, com organização, qualidade e segurança alimentar garantida.',
+      'Faço pratos sob medida para a sua necessidade, garantindo sempre a qualidade e o sabor de comida fresca.',
   },
   {
     id: 'service-empresas',
     icon: <MdBusiness size={28} />,
-    title: 'Atendimento para Empresas',
+    title: 'Almoço Corporativo',
     description:
-      'Preparação de refeições em médio e grande volume, com eficiência e padronização para ambientes corporativos.',
+      'Atendo empresas com refeições em volume, mantendo a padronização e a eficiência que o ambiente de trabalho exige.',
   },
   {
     id: 'service-buffet',
     icon: <MdKitchen size={28} />,
-    title: 'Buffet Quente e Frio',
+    title: 'Buffet Completo',
     description:
-      'Elaboração de cardápios variados para diferentes ocasiões, com apresentação cuidadosa e sabor marcante.',
+      'Elaboro cardápios variados, do frio ao quente, com uma apresentação cuidadosa para marcar o seu evento.',
   },
   {
     id: 'service-sobremesas',
     icon: <MdCake size={28} />,
-    title: 'Sobremesas e Produções Especiais',
+    title: 'Doces e Sobremesas',
     description:
-      'Preparação de bolos, tortas, quiches e sobremesas artesanais para complementar qualquer evento.',
+      'Preparação artesanal de bolos, tortas e sobremesas que complementam o seu evento com um toque especial.',
   },
   {
     id: 'service-cardapio',
     icon: <MdMenuBook size={28} />,
-    title: 'Desenvolvimento de Cardápios',
+    title: 'Cardápios Personalizados',
     description:
-      'Criação e adaptação de cardápios personalizados conforme o perfil do evento e as preferências dos convidados.',
+      'Crio o cardápio ideal conforme o seu perfil e as suas preferências, cuidando de cada detalhe do planejamento.',
   },
 ];
 
 export default function Services() {
   return (
-    <section className={styles.services} id="servicos" aria-label="Serviços de gastronomia profissional no Rio de Janeiro">
+    <section className={styles.services} id="servicos" aria-label="Serviços de cozinheira profissional no Rio de Janeiro">
       <div className="container">
         <div className={styles.header}>
-          <span className={styles.eyebrow}>O que ofereço</span>
+          <span className={styles.eyebrow}>O que eu ofereço</span>
           <h2 className={`section-title ${styles.title}`}>
-            Serviços de cozinheira profissional no Rio de Janeiro
+            Culinária profissional para todas as ocasiões
           </h2>
           <p className="section-subtitle" style={{ textAlign: 'center', maxWidth: 560, margin: '0 auto' }}>
-            Mais de 15 anos atuando na gastronomia profissional, com capacidade de produção
-            de até 600 refeições por dia e compromisso rigoroso com segurança alimentar.
+            Trago a minha vivência em cozinhas profissionais para o seu pedido. Meus pratos são preparados 
+            com ingredientes selecionados e o rigor que a sua mesa exige.
           </p>
         </div>
 
         <div className={styles.grid}>
-          {services.map((service) => (
-            <article key={service.id} className={styles.card} id={service.id}>
+          {services.map((service, index) => (
+            <article 
+              key={service.id} 
+              className={styles.card} 
+              id={service.id}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <div className={styles.iconWrapper}>
                 {service.icon}
               </div>

@@ -14,14 +14,14 @@ export default function Hero() {
     <section className={styles.hero} id="inicio" aria-label="Cozinheira profissional no Rio de Janeiro">
       <div className={`container ${styles.inner}`}>
         {/* Left Image (Moved from right) */}
-        <div className={styles.imageWrapper}>
+        <div className={styles.imageWrapper} data-aos="zoom-in">
           <div className={styles.imageFrame}>
             <img
               src="/images/testimonials/claudia6.png"
-              alt="Cláudia Magalhães cozinheira profissional no Rio de Janeiro — produção de refeições para eventos"
+              alt="Cláudia Magalhães cozinheira profissional no Rio de Janeiro. Produção de refeições para eventos"
               className={styles.heroImage}
             />
-            <div className={styles.floatingBadge}>
+            <div className={styles.floatingBadge} data-aos="zoom-in" data-aos-delay="400">
               <span className={styles.badgeNumber}>2.000+</span>
               <span className={styles.badgeLabel}>clientes atendidos</span>
             </div>
@@ -29,16 +29,14 @@ export default function Hero() {
         </div>
 
         {/* Right Content */}
-        <div className={styles.content}>
+        <div className={styles.content} data-aos="fade-left">
           <h1 className={styles.headline}>
-            Cozinha profissional feita com
-            <span className={styles.highlight}> técnica, cuidado e sabor</span>
+            O melhor da <span className={styles.highlight}>gastronomia artesanal</span> para o seu evento
           </h1>
 
           <p className={styles.subheadline}>
-            Produção de refeições para eventos, empresas e encomendas no{' '}
-            <strong>Rio de Janeiro</strong> — com mais de 15 anos de experiência,
-            segurança alimentar e até 600 refeições por dia.
+            São mais de 15 anos de experiência preparando buffets e encomendas com qualidade e 
+            segurança alimentar. Tudo feito com o cuidado que a sua mesa merece aqui no Rio de Janeiro.
           </p>
 
           <div className={styles.actions}>

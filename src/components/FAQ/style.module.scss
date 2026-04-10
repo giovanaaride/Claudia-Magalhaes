@@ -6,18 +6,19 @@
 }
 
 .inner {
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: 80px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
 }
 
 .textCol {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  position: sticky;
-  top: 100px;
+  text-align: center;
+  align-items: center;
+  max-width: 600px;
 }
 
 .eyebrow {
@@ -43,6 +44,8 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .faqItem {
@@ -54,6 +57,10 @@
 
   &.open {
     box-shadow: $shadow-soft;
+    
+    .faqAnswer {
+      grid-template-rows: 1fr;
+    }
   }
 }
 
@@ -62,10 +69,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 24px;
+  padding: 24px 32px;
   text-align: left;
   font-family: $font-secondary;
-  font-size: 0.98rem;
+  font-size: 1rem;
   font-weight: 600;
   color: $primary-blue;
   cursor: pointer;
@@ -75,7 +82,7 @@
   gap: 16px;
 
   &:hover {
-    background: rgba($light-beige, 0.5);
+    background: rgba($light-beige, 0.4);
   }
 }
 
@@ -88,31 +95,26 @@
 }
 
 .faqAnswer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-
-  .faqItem.open & {
-    max-height: 300px;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+  
+  & > div {
+    overflow: hidden;
   }
 
   p {
-    padding: 0 24px 20px;
+    padding: 0 32px 24px;
     font-size: 0.92rem;
     color: #5A5A6A;
     line-height: 1.7;
+    margin: 0;
   }
 }
 
-@media (max-width: 900px) {
-  .inner {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-
-  .textCol {
-    position: static;
-    align-items: center;
-    text-align: center;
+@media (max-width: 576px) {
+  .faqQuestion, .faqAnswer p {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

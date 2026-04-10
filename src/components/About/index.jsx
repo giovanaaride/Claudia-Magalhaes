@@ -16,7 +16,7 @@ export default function About() {
       <div className={`container ${styles.inner}`}>
 
         {/* Left – Founder Image */}
-        <div className={styles.imageCol}>
+        <div className={styles.imageCol} data-aos="fade-right">
           <div className={styles.imageWrapper}>
             <img
               src="/images/testimonials/claudia.png"
@@ -32,33 +32,31 @@ export default function About() {
         </div>
 
         {/* Right – Content */}
-        <div className={styles.content}>
+        <div className={styles.content} data-aos="fade-left">
           <span className={styles.eyebrow}>Minha História na Cozinha</span>
           <h2 className={`section-title ${styles.title}`}>
-            Gastronomia profissional com rigor, técnica e dedicação
+            Tradicionais e artesanais para encomendas e festas
           </h2>
 
           <p className={styles.text}>
-            A culinária profissional sempre representou mais do que apenas um ofício, sendo um verdadeiro espaço de cuidado,
-            organização e dedicação contínua.
+            Com mais de 15 anos de estrada como cozinheira profissional, sou graduada em Gastronomia 
+            e venho estudando e aprendendo desde muito antes disso.
           </p>
 
           <p className={styles.text}>
-            Formada em Gastronomia e com <strong>mais de 15 anos de experiência profissional</strong>,
-            construí uma trajetória marcada pela excelência na produção culinária, organização
-            estratégica de cozinha e compromisso absoluto com a segurança alimentar.
+            Minha jornada foi construída com base no <strong>compromisso com o sabor de verdade</strong> e 
+            em processos rigorosos de segurança alimentar.
           </p>
 
           <p className={styles.text}>
-            Ao longo desses anos, atuei como cozinheira responsável em escolas, restaurantes
-            comerciais e cozinhas industriais, <strong>liderando produções de até 600 refeições
-            diárias</strong>, sempre mantendo alto padrão de qualidade e eficiência. Atendo como 
-            <strong> Personal Chef no Rio de Janeiro</strong>, com foco na <strong>Zona Norte</strong>, 
-            incluindo regiões como <strong>Méier</strong>, <strong>Tijuca</strong> e proximidades.
+            Durante esses anos, fui cozinheira responsável em escolas, restaurantes e cozinhas industriais. 
+            Já liderei produções de até 600 refeições por dia, sempre mantendo o alto padrão que os meus clientes esperam. 
+            Hoje, foco o meu trabalho em encomendas no Rio de Janeiro, atendendo principalmente a 
+            <strong> Zona Norte</strong>, em bairros como <strong>Méier, Tijuca</strong> e proximidades.
           </p>
 
           <ul className={styles.experienceList}>
-            <li className={styles.eyebrowSmall}>Minha experiência inclui:</li>
+            <li className={styles.eyebrowSmall}>O que eu ofereço:</li>
             {experienceItems.map((item, i) => (
               <li key={i} className={styles.experienceItem}>
                 <span className={styles.icon}>{item.icon}</span>
@@ -68,8 +66,8 @@ export default function About() {
           </ul>
 
           <p className={styles.text}>
-            Atualmente, aplico toda essa vivência gastronômica em cada preparo, unindo técnica, responsabilidade
-            e sabor para garantir profissionalismo e alto padrão em cada detalhe.
+            Coloco toda a minha vivência gastronômica em cada prato, unindo técnica e responsabilidade para que 
+            você receba uma comida profissional com o melhor tempero possível.
           </p>
 
           <a
