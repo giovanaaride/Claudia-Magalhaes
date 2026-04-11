@@ -19,7 +19,7 @@ export default function About() {
         <div className={styles.imageCol} data-aos="fade-right">
           <div className={styles.imageWrapper}>
             <img
-              src="/images/testimonials/claudia.png"
+              src="/images/testimonials/claudia.webp"
               alt="Cláudia Magalhães, cozinheira profissional com mais de 15 anos de experiência no Rio de Janeiro, Zona Norte"
               className={styles.founderImage}
               loading="lazy"

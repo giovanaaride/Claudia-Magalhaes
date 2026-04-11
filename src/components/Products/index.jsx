@@ -3,7 +3,7 @@ import styles from './style.module.scss';
 const products = [
   {
     id: 'product-01',
-    image: '/images/products/product-01.jpg',
+    image: '/images/products/product-01.webp',
     name: 'Brigadeiros Gourmet',
     description: 'Clássicos feitos com chocolate belga, sem conservantes.',
     price: 'R$ 4,00 / unidade',
@@ -11,7 +11,7 @@ const products = [
   },
   {
     id: 'product-02',
-    image: '/images/products/product-02.jpg',
+    image: '/images/products/product-02.webp',
     name: 'Bolo de Pote',
     description: 'Camadas cremosas de bolo e recheio especial em pote individual.',
     price: 'R$ 18,00',
@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 'product-03',
-    image: '/images/products/product-03.jpg',
+    image: '/images/products/product-03.webp',
     name: 'Bolos de Festa',
     description: 'Bolos decorados sob encomenda para toda ocasião especial.',
     price: 'A partir de R$ 120,00',
@@ -27,7 +27,7 @@ const products = [
   },
   {
     id: 'product-04',
-    image: '/images/products/product-04.jpg',
+    image: '/images/products/product-04.webp',
     name: 'Salgadinhos',
     description: 'Coxinhas, rissoles e esfihas artesanais para festas e eventos.',
     price: 'R$ 3,50 / unidade',
@@ -35,7 +35,7 @@ const products = [
   },
   {
     id: 'product-05',
-    image: '/images/products/product-05.jpg',
+    image: '/images/products/product-05.webp',
     name: 'Docinhos Finos',
     description: 'Beijinhos, casadinhos e bicho-de-pé com acabamento perfeito.',
     price: 'R$ 3,00 / unidade',
@@ -43,7 +43,7 @@ const products = [
   },
   {
     id: 'product-06',
-    image: '/images/products/product-06.jpg',
+    image: '/images/products/product-06.webp',
     name: 'Mesa de Sobremesas',
     description: 'Montagem completa de mesa de doces para eventos e celebrações.',
     price: 'Consulte valores',
