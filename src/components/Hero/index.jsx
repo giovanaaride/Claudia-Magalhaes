@@ -20,6 +20,8 @@ export default function Hero() {
               src="/images/testimonials/claudia6.webp"
               alt="Cláudia Magalhães cozinheira profissional no Rio de Janeiro. Produção de refeições para eventos"
               className={styles.heroImage}
+              width="600"
+              height="800"
               fetchPriority="high"
               decoding="async"
             />

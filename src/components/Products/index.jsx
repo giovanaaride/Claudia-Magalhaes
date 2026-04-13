@@ -76,6 +76,8 @@ export default function Products() {
                   src={product.image}
                   alt={`${product.name} - Cláudia Magalhães Personal Chef`}
                   className={styles.productImage}
+                  width="400"
+                  height="300"
                   loading="lazy"
                 />
               </div>

@@ -22,6 +22,8 @@ export default function About() {
               src="/images/testimonials/claudia.webp"
               alt="Cláudia Magalhães, cozinheira profissional com mais de 15 anos de experiência no Rio de Janeiro, Zona Norte"
               className={styles.founderImage}
+              width="600"
+              height="800"
               loading="lazy"
             />
             <div className={styles.experienceBadge}>
