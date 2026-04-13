@@ -32,7 +32,7 @@ export default function Footer() {
               Instagram
             </a>
             <a
-              href="https://wa.me/5521999999999"
+              href="https://wa.me/5521972844210?text=Olá%20Cláudia,%20gostaria%20de%20fazer%20um%20orçamento!"
               target="_blank"
               rel="noopener noreferrer"
               className={`${styles.socialLink} ${styles.whatsapp}`}
@@ -50,8 +50,8 @@ export default function Footer() {
           <h3 className={styles.colTitle}>Contato</h3>
           <ul className={styles.colList}>
             <li>
-              <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer">
-                (21) 99999-9999
+              <a href="https://wa.me/5521972844210?text=Olá%20Cláudia,%20gostaria%20de%20fazer%20um%20orçamento!" target="_blank" rel="noopener noreferrer">
+                (21)97284-4210
               </a>
             </li>
             <li>

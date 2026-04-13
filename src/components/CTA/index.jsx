@@ -16,7 +16,7 @@ export default function CTA() {
           É só entrar em contato para combinarmos cada detalhe do seu pedido!
         </p>
         <a
-          href="https://wa.me/5521999999999?text=Olá%20Cláudia,%20quero%20solicitar%20um%20orçamento!"
+          href="https://wa.me/5521972844210?text=Olá%20Cláudia,%20quero%20solicitar%20um%20orçamento!"
           className={styles.ctaButton}
           target="_blank"
           rel="noopener noreferrer"

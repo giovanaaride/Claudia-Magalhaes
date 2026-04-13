@@ -83,7 +83,7 @@ export default function Services() {
               <h3 className={styles.cardTitle}>{service.title}</h3>
               <p className={styles.cardDesc}>{service.description}</p>
               <a
-                href={`https://wa.me/5521999999999?text=Olá,%20tenho%20interesse%20em:%20${encodeURIComponent(service.title)}`}
+                href={`https://wa.me/5521972844210?text=Olá,%20tenho%20interesse%20em:%20${encodeURIComponent(service.title)}`}
                 className={styles.cardLink}
                 target="_blank"
                 rel="noopener noreferrer"

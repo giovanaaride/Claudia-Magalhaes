@@ -42,7 +42,7 @@ export default function Hero() {
 
           <div className={styles.actions}>
             <a
-              href="https://wa.me/5521999999999?text=Olá%20Cláudia,%20quero%20solicitar%20um%20orçamento!"
+              href="https://wa.me/5521972844210?text=Olá%20Cláudia,%20quero%20solicitar%20um%20orçamento!"
               className={`btn-primary ${styles.btnPrimary}`}
               target="_blank"
               rel="noopener noreferrer"

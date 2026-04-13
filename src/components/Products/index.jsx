@@ -85,7 +85,7 @@ export default function Products() {
                 <div className={styles.cardFooter}>
                   <span className={styles.price}>{product.price}</span>
                   <a
-                    href={`https://wa.me/5511999999999?text=Olá,%20quero%20pedir:%20${encodeURIComponent(product.name)}`}
+                    href={`https://wa.me/5521972844210?text=Olá,%20quero%20pedir:%20${encodeURIComponent(product.name)}`}
                     className={styles.orderBtn}
                     target="_blank"
                     rel="noopener noreferrer"

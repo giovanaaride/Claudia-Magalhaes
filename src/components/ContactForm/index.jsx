@@ -29,7 +29,7 @@ export default function ContactForm() {
                  `Nº de Pessoas: ${pessoas || 'Não informado'}\n\n` +
                  `Mensagem: \n${mensagem || 'Sem mensagem adicional.'}`;
                  
-    const waUrl = `https://wa.me/5521999999999?text=${encodeURIComponent(text)}`;
+    const waUrl = `https://wa.me/5521972844210?text=${encodeURIComponent(text)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
     setSent(true);
   };
@@ -54,12 +54,12 @@ export default function ContactForm() {
                 <div>
                   <span className={styles.contactLabel}>Meu WhatsApp</span>
                   <a
-                    href="https://wa.me/5521999999999"
+                    href="https://wa.me/5521972844210?text=Olá%20Cláudia,%20gostaria%20de%20fazer%20um%20orçamento!"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.contactValue}
                   >
-                    (21) 99999-9999
+                    (21)97284-4210
                   </a>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function ContactForm() {
                     name="telefone"
                     value={form.telefone}
                     onChange={handleChange}
-                    placeholder="(21) 99999-9999"
+                    placeholder="(21) 91234-5678"
                     className={styles.input}
                     required
                   />

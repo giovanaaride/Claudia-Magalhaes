@@ -11,7 +11,7 @@ const SchemaOrg = () => {
       "name": "Cláudia Magalhães. Cozinheira Profissional",
       "description": "Culinária artesanal deliciosa para eventos e encomendas no Rio de Janeiro. Buffet por encomenda com mais de 15 anos de tradição e cuidado.",
       "url": window.location.origin,
-      "telephone": "+5521999999999",
+      "telephone": "+55 21 97284-4210",
       "email": "contato@claudiamagalhaes.com.br",
       "address": {
         "@type": "PostalAddress",

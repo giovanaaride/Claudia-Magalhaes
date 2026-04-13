@@ -16,8 +16,8 @@ const faqs = [
   },
   {
     id: 'faq-3',
-    q: 'Você leva panelas e utensílios?',
-    a: 'Se o preparo for feito na sua casa, eu utilizo a estrutura e os itens que você já possui na cozinha! Na hora de pensar nos pratos e definir o cardápio, a gente leva em conta justamente o que você tem disponível para que eu trabalhe e entregue o melhor resultado.',
+    q: 'Como funciona a parte de estrutura e utensílios?',
+    a: 'Em caso de atendimento presencial, eu utilizo a estrutura e os utensílios que já existem no local do evento. Na hora de definir os pratos, a gente já leva em conta justamente o que você tem disponível para trabalhar e entregar o melhor resultado.',
   },
   {
     id: 'faq-4',
@@ -34,11 +34,7 @@ const faqs = [
     q: 'Quais são as formas de pagamento?',
     a: 'Atualmente aceito pagamento apenas em dinheiro ou via Pix.',
   },
-  {
-    id: 'faq-7',
-    q: 'Como funcionam os orçamentos?',
-    a: 'É só me chamar no WhatsApp ali no botão mágico! Me conta o que você está querendo fazer, a data e para quantas pessoas. A gente bate um papo rápido e eu te passo certinho.',
-  },
+
 ];
 
 function FaqItem({ item }) {
@@ -83,7 +79,7 @@ export default function FAQ() {
               Se não encontrar o que procura aqui, me chame no WhatsApp e a gente conversa.
             </p>
             <a
-              href="https://wa.me/5521999999999"
+              href="https://wa.me/5521972844210?text=Olá%20Cláudia,%20gostaria%20de%20fazer%20um%20orçamento!"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

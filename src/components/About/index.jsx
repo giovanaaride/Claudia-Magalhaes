@@ -71,7 +71,7 @@ export default function About() {
           </p>
 
           <a
-            href="https://wa.me/5521999999999?text=Olá%20Cláudia,%20quero%20saber%20mais%20sobre%20seus%20serviços!"
+            href="https://wa.me/5521972844210?text=Olá%20Cláudia,%20quero%20saber%20mais%20sobre%20seus%20serviços!"
             className="btn-primary"
             target="_blank"
             rel="noopener noreferrer"

@@ -59,7 +59,7 @@ export default function Header() {
 
         {/* CTA */}
         <a
-          href="https://wa.me/5521999999999?text=Olá,%20quero%20solicitar%20um%20orçamento!"
+          href="https://wa.me/5521972844210?text=Olá,%20quero%20solicitar%20um%20orçamento!"
           className={styles.ctaButton}
           target="_blank"
           rel="noopener noreferrer"
@@ -94,7 +94,7 @@ export default function Header() {
             ))}
           </ul>
           <a
-            href="https://wa.me/5521999999999?text=Olá,%20quero%20solicitar%20um%20orçamento!"
+            href="https://wa.me/5521972844210?text=Olá,%20quero%20solicitar%20um%20orçamento!"
             className={styles.mobileCta}
             target="_blank"
             rel="noopener noreferrer"
